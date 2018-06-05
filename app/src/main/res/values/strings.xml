@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">AnimatorLab</string>
+    <string name="alphaanimator">AlphaAnimator</string>
+    <string name="translateanimator">TranslateAnimator</string>
+    <string name="scaleanimator">ScaleAnimator</string>
+    <string name="rotateanimator">RotateAnimator</string>
+    <string name="click">Click</string>
+
+
+    <string name="scaleItem0">
+            android:fromXScale="0.0"\n
+            android:toXScale="1.4"\n
+            android:fromYScale="0.0"\n
+            android:toYScale="1.4"\n
+            android:pivotX="50%"\n
+            android:pivotY="50%"\n
+            android:duration="700"\n
+            android:fillAfter="true"
+             </string>
+
+
+    <string-array name="scaleArray">
+        <item>pivotX 取值数值（50)</item>
+        <item>pivotX 取值百分数时（50%)</item>
+        <item>pivotX 取值 50%p 时</item>
+        <item>android:fillAfter:保持动画结束的状态</item>
+        <item>android:fillBefore 还原初始化状态</item>
+        <item>android:repeatMode= restart/reverse设定回放类型</item>
+    </string-array>
+
 </resources>
