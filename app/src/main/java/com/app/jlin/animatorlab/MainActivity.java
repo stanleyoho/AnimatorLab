@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnRotate.setOnClickListener(clickListener);
         binding.btnScale.setOnClickListener(clickListener);
         binding.btnTranslate.setOnClickListener(clickListener);
+        binding.btnMix.setOnClickListener(clickListener);
     }
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
@@ -50,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btnTranslate:
                     startActivity(new Intent(MainActivity.this,TranslateAnimatorActivity.class));
+                    break;
+                case R.id.btnMix:
+                    startActivity(new Intent(MainActivity.this,MixActivity.class));
                     break;
             }
         }

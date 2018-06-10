@@ -19,7 +19,8 @@
         <activity android:name=".ScaleAnimatorActivity" />
         <activity android:name=".AlphaAnimatorActivity" />
         <activity android:name=".RotateAnimatorActivity" />
-        <activity android:name=".TranslateAnimatorActivity"></activity>
+        <activity android:name=".TranslateAnimatorActivity" />
+        <activity android:name=".MixActivity"></activity>
     </application>
 
 </manifest>

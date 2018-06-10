@@ -46,6 +46,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/rotateanimator" />
 
+                <Button
+                    android:id="@+id/btnMix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mix" />
             </LinearLayout>
         </ScrollView>
 

@@ -79,6 +79,55 @@
     android:fillBefore="true"\n
              </string>
 
+    <string name="rotate_clock">
+       android:fromDegrees="0"  \n
+    android:toDegrees="-650"  \n
+    android:pivotX="50%"  \n
+    android:pivotY="50%"  \n
+    android:duration="3000" \n
+    android:fillAfter="true"\n
+             </string>
+
+    <string name="rotate_clockwise">
+       android:fromDegrees="0"  \n
+    android:toDegrees="650"  \n
+    android:pivotX="50%"  \n
+    android:pivotY="50%"  \n
+    android:duration="3000" \n
+    android:fillAfter="true"\n
+             </string>
+
+
+    <string name="translate_shift">
+      android:fromXDelta="0"   \n
+    android:toXDelta="-80"  \n
+    android:fromYDelta="0"  \n
+    android:toYDelta="-80"  \n
+    android:duration="2000"  \n
+    android:fillBefore="true"\n
+             </string>
+    <string name="mix">Mix</string>
+
+    <string name="mixdetail">
+        android:duration="3000"\n
+        android:fillAfter="true"\n
+  alpha\n
+      android:fromAlpha="0.0"\n
+      android:toAlpha="1.0"/>\n
+  scale\n
+      android:fromXScale="0.0"\n
+      android:toXScale="1.4"\n
+      android:fromYScale="0.0"\n
+      android:toYScale="1.4"\n
+      android:pivotX="50%"\n
+      android:pivotY="50%"/>\n
+  rotate\n
+      android:fromDegrees="0"\n
+      android:toDegrees="720"\n
+      android:pivotX="50%"\n
+      android:pivotY="50%"/>
+    </string>
+
     <string-array name="scaleArray">
         <item>pivotX 取值数值（50)</item>
         <item>pivotX 取值百分数时（50%)</item>
@@ -91,5 +140,19 @@
     <string-array name="alphaArray">
         <item>调节透明度</item>
     </string-array>
+
+    <string-array name="rotateArray">
+        <item>順時鐘</item>
+        <item>逆時鐘</item>
+    </string-array>
+
+    <string-array name="translateArray">
+        <item>水平移動</item>
+    </string-array>
+
+    <string-array name="mixArray">
+        <item>rotate+alpha+translate+scale</item>
+    </string-array>
+
 
 </resources>

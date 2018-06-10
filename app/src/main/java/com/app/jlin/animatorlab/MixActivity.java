@@ -1,5 +1,6 @@
 package com.app.jlin.animatorlab;
 
+import android.animation.Animator;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,19 +10,19 @@ import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
-import com.app.jlin.animatorlab.databinding.ActivityTranslateAnimatorBinding;
+import com.app.jlin.animatorlab.databinding.ActivityMixBinding;
 
-public class TranslateAnimatorActivity extends AppCompatActivity {
+public class MixActivity extends AppCompatActivity {
 
-    private ActivityTranslateAnimatorBinding binding;
+    private ActivityMixBinding binding;
     private Animation animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_translate_animator);
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_mix);
 
-        ArrayAdapter arrayAdapter =  ArrayAdapter.createFromResource(this,R.array.translateArray,android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter arrayAdapter =  ArrayAdapter.createFromResource(this,R.array.mixArray,android.R.layout.simple_spinner_dropdown_item);
         binding.spinner.setAdapter(arrayAdapter);
         initEvent();
     }
@@ -33,8 +34,8 @@ public class TranslateAnimatorActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        animation = AnimationUtils.loadAnimation(TranslateAnimatorActivity.this,R.anim.translate_shift);
-                        binding.textView.setText(getResources().getString(R.string.translateanimator));
+                        animation = AnimationUtils.loadAnimation(MixActivity.this,R.anim.mix);
+                        binding.textView.setText(getResources().getString(R.string.mixdetail));
                         break;
                 }
             }
