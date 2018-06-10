@@ -7,17 +7,77 @@
     <string name="click">Click</string>
 
 
-    <string name="scaleItem0">
+    <string name="scale_pivot">
             android:fromXScale="0.0"\n
-            android:toXScale="1.4"\n
             android:fromYScale="0.0"\n
-            android:toYScale="1.4"\n
-            android:pivotX="50%"\n
-            android:pivotY="50%"\n
-            android:duration="700"\n
-            android:fillAfter="true"
+    android:toXScale="2.0"\n
+    android:toYScale="2.0"\n
+    android:pivotX="50"\n
+    android:pivotY="50"\n
+    android:duration="500"\n
              </string>
 
+    <string name="scale_pivot_percent">
+            android:fromXScale="0.0"\n
+            android:fromYScale="0.0"\n
+    android:toXScale="2.0"\n
+    android:toYScale="2.0"\n
+    android:pivotX="50%"\n
+    android:pivotY="50%"\n
+    android:duration="500"\n
+             </string>
+
+    <string name="scale_pivot_percent_parent">
+        android:fromXScale="0.0"\n
+        android:fromYScale="0.0"\n
+        android:toXScale="2.0"\n
+        android:toYScale="2.0"\n
+        android:pivotX="50%p"\n
+        android:pivotY="50%p"\n
+        android:duration="500"\n
+             </string>
+
+    <string name="scale_fill_before">
+       android:fromXScale="0.0"  \n
+    android:toXScale="1.4"  \n
+    android:fromYScale="0.0"  \n
+    android:toYScale="1.4"  \n
+    android:pivotX="50%"  \n
+    android:pivotY="50%"  \n
+    android:duration="700"  \n
+    android:fillBefore="true" \n
+             </string>
+
+    <string name="scale_fill_after">
+        android:fromXScale="0.0" \n
+    android:toXScale="1.4"  \n
+    android:fromYScale="0.0"  \n
+    android:toYScale="1.4"  \n
+    android:pivotX="50%"  \n
+    android:pivotY="50%"  \n
+    android:duration="700"  \n
+    android:fillAfter="true"\n
+             </string>
+
+    <string name="scale_repeat">
+        android:fromXScale="0.0"  \n
+    android:toXScale="1.4"  \n
+    android:fromYScale="0.0"  \n
+    android:toYScale="1.4"  \n
+    android:pivotX="50%"  \n
+    android:pivotY="50%"  \n
+    android:duration="700"  \n
+    android:fillBefore="true" \n
+    android:repeatCount="1"  \n
+    android:repeatMode="restart"\n
+             </string>
+
+    <string name="alpha">
+       android:fromAlpha="1.0"  \n
+    android:toAlpha="0.1"  \n
+    android:duration="3000"  \n
+    android:fillBefore="true"\n
+             </string>
 
     <string-array name="scaleArray">
         <item>pivotX 取值数值（50)</item>
@@ -26,6 +86,10 @@
         <item>android:fillAfter:保持动画结束的状态</item>
         <item>android:fillBefore 还原初始化状态</item>
         <item>android:repeatMode= restart/reverse设定回放类型</item>
+    </string-array>
+
+    <string-array name="alphaArray">
+        <item>调节透明度</item>
     </string-array>
 
 </resources>

@@ -21,7 +21,7 @@ public class ScaleAnimatorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_scale_animator);
-        ArrayAdapter arrayAdapter =  ArrayAdapter.createFromResource(this,R.array.scaleArray,android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter arrayAdapter =  ArrayAdapter.createFromResource(this,R.array.alphaArray,android.R.layout.simple_spinner_dropdown_item);
         binding.spinner.setAdapter(arrayAdapter);
         initEvent();
     }
@@ -33,18 +33,28 @@ public class ScaleAnimatorActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        animation = AnimationUtils.loadAnimation(ScaleAnimatorActivity.this,R.anim.scale_type_1);
-                        binding.textView.setText(getResources().getString(R.string.scaleItem0));
+                        animation = AnimationUtils.loadAnimation(ScaleAnimatorActivity.this,R.anim.scale_type_pivot_value);
+                        binding.textView.setText(getResources().getString(R.string.scale_pivot));
                         break;
                     case 1:
-                        animation = AnimationUtils.loadAnimation(ScaleAnimatorActivity.this,R.anim.scale_type_1_with_pivot);
+                        animation = AnimationUtils.loadAnimation(ScaleAnimatorActivity.this,R.anim.scale_type_pivot_persent_value);
+                        binding.textView.setText(getResources().getString(R.string.scale_pivot_percent));
                         break;
                     case 2:
-                        animation = AnimationUtils.loadAnimation(ScaleAnimatorActivity.this,R.anim.scale_type_1_with_pivot_persent);
+                        animation = AnimationUtils.loadAnimation(ScaleAnimatorActivity.this,R.anim.scale_type_pivot_persent_value_parent);
+                        binding.textView.setText(getResources().getString(R.string.scale_pivot_percent_parent));
                         break;
                     case 3:
+                        animation = AnimationUtils.loadAnimation(ScaleAnimatorActivity.this,R.anim.scale_type_fill_after);
+                        binding.textView.setText(getResources().getString(R.string.scale_fill_after));
                         break;
                     case 4:
+                        animation = AnimationUtils.loadAnimation(ScaleAnimatorActivity.this,R.anim.scale_type_fill_before);
+                        binding.textView.setText(getResources().getString(R.string.scale_fill_before));
+                        break;
+                    case 5:
+                        animation = AnimationUtils.loadAnimation(ScaleAnimatorActivity.this,R.anim.scale_type_repeat_mode);
+                        binding.textView.setText(getResources().getString(R.string.scale_repeat));
                         break;
                 }
             }
