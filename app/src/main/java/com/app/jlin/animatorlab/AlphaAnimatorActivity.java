@@ -20,7 +20,7 @@ public class AlphaAnimatorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_alpha_animator);
-        ArrayAdapter arrayAdapter =  ArrayAdapter.createFromResource(this,R.array.scaleArray,android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter arrayAdapter =  ArrayAdapter.createFromResource(this,R.array.alphaArray,android.R.layout.simple_spinner_dropdown_item);
         binding.spinner.setAdapter(arrayAdapter);
         initEvent();
     }
